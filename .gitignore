@@ -1,0 +1,17 @@
+# dependencies
+/node_modules
+
+# build output
+/build
+/dist
+
+# environment
+/.env
+
+# IDE files
+/.idea
+*.iml
+
+# OS-generated files
+.DS_Store
+Thumbs.db

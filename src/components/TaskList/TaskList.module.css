@@ -1,0 +1,33 @@
+.taskList {
+  margin-top: 1rem;
+}
+
+.taskListFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filters button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filters button.active {
+  border-bottom: 2px solid #61dafb;
+}
+
+.clearCompleted {
+  background: none;
+  border: none;
+  color: #61dafb;
+  cursor: pointer;
+}

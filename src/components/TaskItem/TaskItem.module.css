@@ -1,0 +1,61 @@
+.taskItem {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.taskItem input[type="checkbox"] {
+  display: none;
+}
+
+.taskItem span.completed {
+  text-decoration: line-through;
+  color: #bbbfc5;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.customCheckbox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #4caf50;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.customCheckbox svg {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .customCheckbox svg {
+  display: block;
+}
+
+.removeButton {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 16px;
+}
+
+.removeButton:hover {
+  color: darkred;
+}
+
+.taskText {
+  flex-grow: 1;
+  word-wrap: break-word;
+}
